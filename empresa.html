@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" class="no-js" lang="pt"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="pt"> <!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Lava Rápido Novaes</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <!-- JS -->
+    <script src="js/jquery-1.11.1.min.js"></script>  
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<!-- Topo -->
+<div class="topo">
+    <div class="wrap">
+    	<div class="logo">
+        	<a href="index.html" title="Lava Rápido Novaes">
+            	<img src="img/logo.png" alt="Lava Rápido Novaes" />
+            </a>
+        </div>
+        <div class="frase"></div>
+        <div class="simbolo"></div>
+        <div class="menu">
+        	<ul>
+            	<li><a href="index.html" title="Home">HOME</a></li>
+                <li><a href="empresa.html" title="A Empresa" class="active">A EMPRESA</a></li>
+                <li><a href="servicos.html" title="Serviços">SERVIÇOS</a></li>
+                <li><a href="localizacao.html" title="Localização">LOCALIZAÇÃO</a></li>
+                <li><a href="faleconosco.html" title="Fale Conosco">FALE CONOSCO</a></li>
+            </ul>
+        </div>
+    </div>
+</div><!-- Fim Topo -->
+
+<!-- Destaques -->
+<div class="wrap">
+	<div>
+		<img src="img/img-internas.jpg" alt="Lava Rápido Novaes" class="img-internas" />
+    </div>
+	<div class="box-conteudo">	
+		<h1>A Empresa</h1>
+        <img src="img/img1.png" style="float:right; margin:10px" />
+        <p>Quem possui carro sabe que o valor de um automóvel vai além do quesito financeiro. O carro é, também, um companheiro de todas as horas e precisa ser funcional seja para a correria do dia a dia ou para um passeio junto da família.</p>
+        <p>É com essa visão que o Posto de Serviços Automotivos São Paulo cuida do seu carro há 20 anos. Nós apostamos na relação entre o dono e o seu veículo e cuidamos com presteza desse bem tão essencial. Assumindo um compromisso responsável com cada cliente, oferecemos uma série de serviços que vão desde a limpeza comum até reparos nas estruturas interna e externa dos automóveis que chegam até nós.</p>
+        <p>Cientes do nosso dever com a rapidez e a qualidade do atendimento, entregamos o seu carro limpo em até 30 minutos. Levamos isso tão a sério que dispomos de uma larga equipe composta por 12 funcionários preparada para atender até 4 carros de uma só vez.</p>
+        <p>Nossos colaboradores estão qualificados para cuidar do seu veículo com atenção aos detalhes de lavagem e reparos. Utilizamos os melhores produtos de limpeza e manutenção do mercado automotivo, itens essenciais para prolongar a vida útil do automóvel.
+        <p>Ao reconhecermos o valor de um automóvel na vida de cada cliente, prezamos pela assistência diferenciada e uma ampla variedade de serviços. Venha nos conhecer e sinta-se em casa!</p>
+<footer>
+	<div class="rodape">
+    	<div class="wrap">
+                Rua Prof. Carlos Callioli, 40 - Pq. Maria Luiza - SP<br>
+        	Copyright © Lava Rápido Novaes - Todos os direitos reservados.
+            <div class="bandeiras">
+            	<img src="img/bandeiras.jpg" />
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+		
+				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+					changepicturecallback: function(){ initialize(); }
+				});
+
+				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+					changepicturecallback: function(){ _bsap.exec(); }
+				});
+			});
+			</script>
+	
+
+	
+
+</body>
+</html>

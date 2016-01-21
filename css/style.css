@@ -1,0 +1,340 @@
+
+/*   
+Theme Name: Portal da Juventude
+Theme URI: http://www.portaldajuventude.com.br
+Description: O Portal da Juventude é um site focado nas políticas públicas criadas para os jovens da cidade de São Paulo. Seu objetivo é divulgar os programas desenvolvidos pela Secretaria de Direitos Humanos e Cidadania da cidade de São Paulo para o jovem, além de fornecer uma ferramenta para participação popular através de fórum de discussão e de voluntariado.
+
+Author: CTIS
+Author URI: http://www.ctis.com.br
+License: CTIS Tecnologia S.A
+License URI: http://www.ctis.com.br
+Version: 1.0
+Tags: juventude, direitos humanos, cidadania, jovens
+*/
+
+/* Font Import */
+/* ---------------------------------------------------------- */
+
+/* font-family: 'Ubuntu', sans-serif; == Textos Gerais */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/* font-family: 'Ubuntu Condensed', sans-serif; */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
+/* font-family: 'Ubuntu Bold', sans-serif; */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Bold);
+
+/* font-family: 'Ubuntu Mono', ; */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+/* font-family: 'Exo 2', sans-serif; == Menus e Títulos H1 */
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+
+
+
+
+
+
+/* Global */
+/* ---------------------------------------------------------- */
+
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	height:100%;
+	color:#333;
+	text-rendering: optimizeLegibility; 
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	background:url(../img/bg.jpg) repeat-x top;
+}
+
+html {
+	padding: 0px;
+	margin: 0px;
+	height:100%;
+}
+
+label{width:100%; display:block;line-height:34px;margin-top:10px}
+input[type=text]{line-height:34px; border:1px solid #ccc; background:#eee; width:100%;}
+textarea{line-height:24px; border:1px solid #ccc; background:#eee; width:100%;}
+input[type=submit]{border:1px solid #ccc; background:#339900; padding:10px 20px; color:#fff; float:right; border:0; margin-top:20px; cursor:pointer}
+input[type=submit]:hover{background:#336600}
+input[type=text]:hover, textarea:hover{background:#ccc}
+
+img {
+	border:0;	
+}
+
+h1, h2, h3, h4, h5 {
+	font-family:'Exo 2', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+   content: " ";
+   display: table;
+}
+ 
+.clearfix:after {
+   clear: both;
+}
+ 
+.clearfix {
+   *zoom: 1;
+}
+
+img,
+picture,
+video,
+embed {
+   max-width: 100%;
+}
+
+*, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;	
+}
+
+.wrap {
+	margin:0 auto;
+	width:998px;
+	position:relative;	
+}
+
+/** Topo **/
+
+.topo {
+	width:100%;
+	float:left;
+}
+
+.logo {
+	float:left;
+	width:200px;
+	height:120px;	
+	margin:20px 0 0 10px;
+}
+
+.logo a, .logo img{
+	border:0;	
+}
+
+.frase {
+	float:left;
+	width:454px;
+	height:68px;
+	background:url(../img/frase-topo.png) no-repeat;
+	margin:50px 0 0 80px;
+}
+
+.simbolo {
+	float:right;
+	width:117px;
+	height:114px;
+	background:url(../img/ecologico-simbolo.png) no-repeat;	
+	margin:20px 10px 0 0;
+}
+
+.menu {
+	float:left;
+	width:973px;
+	height:46px;
+	background:url(../img/bg-menu.jpg) no-repeat;
+	margin:20px 0 0 10px;	
+	font-family:'Exo 2', sans-serif;
+}
+
+.menu ul {
+	margin:0;
+	padding:0;	
+	width:100%;
+	text-align:center;
+}
+
+.menu li {
+	margin:13px;
+	padding:0;
+	display:inline-block;	
+	color:#fff;
+	text-shadow:1px 1px 1px #000;
+}
+
+.menu li a{	
+	color:#fff;
+	text-shadow:1px 1px 1px #000;
+	text-decoration:none;
+}
+
+.menu li a:hover, .menu li a.active{	
+	color:#000;
+	text-shadow:1px 1px 1px #fff;
+}
+
+.lista-servicos {
+	margin:30px 0;
+	padding:0;	
+}
+
+.lista-servicos li{
+	float:left;
+	margin:1px 0 0 0;
+	padding:0;	
+	width:100%;
+	border-bottom:1px solid #ccc;
+	line-height:50px;
+	height:50px;
+	list-style:none;
+	font-size:24px;
+}
+
+.lista-servicos li span{
+	float:right;
+	padding:0 15px;	
+	width:250px;
+	background:#000;
+	color:#FC0;
+	text-align:center;
+}
+
+/** Home **/
+
+.box-banner {
+	width:100%;
+	float:left;	
+}
+
+.banner {
+	float:left;
+	width:976px;
+	height:380px;
+	margin:0 0 0 10px;
+}
+
+.bem-vindo {
+	float:left;
+	width:100%;
+	margin:15px 0;
+	text-align:center;
+	padding:0 50px;
+}
+
+.box-destaques {
+	width:100%;
+	float:left;
+	background:#231f20;
+	border-bottom:7px solid #b1a8a8;
+	border-top:7px solid #b1a8a8;
+	margin:10px 0;
+}
+
+.dest {
+	width:33.3%;
+	float:left;
+	padding:10px;
+	text-align:center;
+	margin:20px 0;
+}
+
+.dest h2 {
+	color:#fff;
+	font-size:16px;
+}
+
+.dest p {
+	color:#666;
+}
+
+.dest a {
+	color:#29da29;
+	background:#000;
+	width:120px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	display:block;
+	text-decoration:none;
+	margin:30px auto 0 auto;
+	position:relative;
+	border-radius:5px;
+}
+
+.dest a:hover {
+	color:#29da29;
+	background:#111;
+}
+
+/** Conteudo **/
+
+.box-conteudo {
+	float:left;
+	width:974px;;
+	padding:30px;
+	background:#fff;
+	margin:0 10px 10px 10px;
+	border-bottom:1px solid #ccc;	
+	line-height:24px;
+}
+
+.img-internas {
+	float:left;
+	margin:0 10px;	
+}
+
+.box1 {
+	float:left;
+	width:60%;
+	padding:10px;	
+}
+
+.box2 {
+	float:left;
+	width:40%;
+	padding:10px 0 0 50px;	
+}
+
+.bandeiras {
+	float:right;
+	margin:-25px 0 0 0;	
+}
+
+.galeria ul {
+	margin:0;
+	padding:0;	
+}
+
+.galeria li {
+	display:inline-block;
+	margin:0;
+	padding:0;	
+}
+
+/** Footer **/
+
+.rodape {
+	float:left;
+	width:100%;	
+	padding:10px 0 20px 0;
+	font-size:13px;	
+	line-height:20px;
+}
